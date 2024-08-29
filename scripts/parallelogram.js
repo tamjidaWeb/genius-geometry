@@ -33,11 +33,33 @@
         
 // }
 
-function calculateParallelogramArea()
+function calculateParallelogramArea(){
+    const base = getInputValueById('parallelo-base');
+    // console.log('base value',base);
+
+    const height = getInputValueById('parallelogram-height');
+    // console.log(height);
+    const area = base * height;
+    console.log('parallelogram area is', area);
+
+    setInnerTextById('parallelo-span', area);
+
+}
 
 
+function getInputValueById (inputFieldId){
+    const inputField = document.getElementById(inputFieldId);
+    const inputValueText = inputField.value;
+    const inputValue = parseFloat(inputValueText);
+    // console.log(inputValue)
+    return inputValue;
+}
+ 
 
-
+function setInnerTextById (elementId, area){
+    const element = document.getElementById(elementId);
+    element.innerText = area;
+}
 
 
 
