@@ -45,18 +45,29 @@
                       </div>
                     </div>
                   </div>
-<!-- rectangular card -->
+<!-- parallelogram card -->
 <div class="card bg-base-100 w-96 shadow-xl gap-4">
     <figure>
       <img
-        src="images/rectangle.png"
+        src="images/parallelogram.png"
         alt="Shoes" />
     </figure>
     <div class="card-body">
-      <h2 class="card-title">triangle!</h2>
-      <p>Area = 0.5 X b X h</p>
+      <h2 class="card-title">parallelogram!</h2>
+      <p>Area (A) = b X h</p>
+      <div>
+        <input class="w-24 text-2xl rounded-sm" type="text" name="" id="parallelo-base" placeholder="base">
+        <span class="mr-4 ml-2">cm</span>
+
+        <input class="w-24 text-2xl rounded-sm" type="text" name="" id="parallelogram-height" placeholder="heights">
+        <span class="mr-4 ml-2">cm</span>
+      </div>
+
+      <div>
+        <p >area : <span id="parallelo-span">0</span><span>cm<sup>2</sup></span></p>
+      </div>
       <div class="card-actions ">
-        <button class="btn btn-primary w-full">Calculate</button>
+        <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
       </div>
     </div>
   </div>
@@ -97,5 +108,6 @@
 
     <script src="scripts/triangle.calculate.js"></script>
     <script src="scripts/rectangle.calculate.js"></script>
+    <script src="scripts/parallelogram.js"></script>
 </body>
 </html>
