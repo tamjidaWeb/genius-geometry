@@ -94,6 +94,30 @@
       </div>
     </div>
   </div>
+  <div class="card bg-base-100 w-96 shadow-xl gap-4">
+    <figure>
+      <img
+        src="images/pentagon.png"
+        alt="Shoes" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">pentagon</h2>
+      <p>Area (A) = 0.5 X p X b</p>
+
+      <div class="flex gap-5">
+        <input  class="w-24 text-2xl rounded-sm" type="text" name="" id="pen" placeholder="perimeter">
+      <span>cm</span>
+      <input  class="w-24 text-2xl rounded-sm" type="text" name="" id="apo" placeholder="apothem">
+      <span>cm</span>
+      </div>
+      <div>
+        <p>area: <span id="pentagon-span">0 <span><span>cm<sup>2</sup></span></p>
+      </div> 
+      <div class="card-actions ">
+        <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
+      </div>
+    </div>
+  </div>
 
              </div>
 
@@ -109,5 +133,7 @@
     <script src="scripts/triangle.calculate.js"></script>
     <script src="scripts/rectangle.calculate.js"></script>
     <script src="scripts/parallelogram.js"></script>
+    
+    <script src="scripts/penthagon-area.js"></script>
 </body>
 </html>
