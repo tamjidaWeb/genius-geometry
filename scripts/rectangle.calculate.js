@@ -1,3 +1,4 @@
 function rectangaleArea (){
-    console.log('calculate rectangale area')
+    const rectangleLength = document.getElementById('rectangle-Length');
+    console.log(rectangleLength)
 }
