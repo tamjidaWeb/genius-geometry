@@ -4,7 +4,7 @@ function calculatePentagonArea(){
     const perimeter = getInputValueById('pen');
     const apothem = getInputValueById('apo');
     const area = 0.5* perimeter * apothem;
-    setInnerText('pentagon-span', area)
+    setInnerText('pentagon-span',area)
 
 }
 
